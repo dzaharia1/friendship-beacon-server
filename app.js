@@ -14,7 +14,7 @@ const twilioClient = require("twilio")(
 
 const activities = [
   {
-    name: "Bar Hangout",
+    name: "Bar hangout",
     subscribers: [
       { name: "Zach", number: "+17189083928" },
       { name: "Dan", number: "+19144798900" },
@@ -35,14 +35,14 @@ const activities = [
     ],
   },
   {
-    name: "Fancy Dinner",
+    name: "Fancy dinner",
     subscribers: [
       { name: "Zach", number: "+17189083928" },
       { name: "Dan", number: "+19144798900" },
     ],
   },
   {
-    name: "Casual Dinner",
+    name: "Casual dinner",
     subscribers: [
       { name: "Zach", number: "+17189083928" },
       { name: "Dan", number: "+19144798900" },
@@ -117,7 +117,7 @@ app.get("/", (req, res) => {
       });
     });
   }
-
+  console.log(currentActivity);
   res.send(currentActivity);
 });
 
