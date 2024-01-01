@@ -169,6 +169,13 @@ const activities = [
       { name: "Isaiah", number: "+‭6465842703‬" }
     ],
   },
+  {
+    name: "Closed test",
+    subscribers: [
+      { name: "Zach", number: "+17189083928" },
+      { name: "Dan", number: "+19144798900" }
+    ],
+  },
 ];
 
 app.get("/", (req, res) => {
